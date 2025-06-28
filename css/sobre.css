@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #F0F3F3;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilo do header */
+header {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #B0B0B0;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 40px;
+}
+
+.about-desktop nav ul {
+    list-style-type: none;
+}
+
+.about-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.about-desktop nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.about-desktop nav a:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+/* introdução do about */
+section.about-site {
+    height: 98vh;
+    background-color: #B0B0B0;
+    background-size: cover;
+    background-position: center;
+    color: #F0F3F3;
+    padding-top: 120px;
+
+}
+
+.about-site .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.about-site .txt-about h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.about-site .txt-about h1 span {
+    color: #413f3f;
+    font-weight: 700;
+}
+
+.about-site .txt-about p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.about-site .txt-about p span {
+    display: block;
+    color: #413f3f;
+}
+
+/* estilo do quem somos */
+
+.quem-somos .txt-quem-somos h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 300;
+    color: #999b9b;
+    padding: 40px;
+    margin-top: 80px 0;
+}
+
+.txt-quem-somos h1 span {
+    color: #413f3f;
+    font-weight: 700;
+}
+
+section.quem-somos {
+    padding: 80px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.quem-somos .itens-container {
+    width: 30%;
+    margin: 15px;
+    display: inline-block;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgb(37, 15, 15), 0 10px 10px rgb(37, 15, 15);
+    transition: 0.4s;
+    background: #e7e5e5;
+}
+
+.quem-somos .itens-container:hover {
+    box-shadow: 0 3px 6 px rgb(37, 15, 15), 0 3px 6 px rgb(37, 15, 15);
+    transform: translate(0px, -8px);
+}
+
+.quem-somos .itens-container .img-itens img {
+    max-width: 350px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.quem-somos .itens-container .txt-itens h3 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.quem-somos .itens-container .txt-itens h3 span {
+    font-weight: 200;
+}
+
+.quem-somos .itens-container .txt-itens p {
+    text-align: initial;
+    margin: 30px;
+    color: #B0B0B0;
+    padding-top: 0 8px;
+}
+
+.quem-somos .itens-container .txt-itens a img {
+    max-width: 40px;
+}
+
+/* estilo nosso objetivo */
+section.our-goal {
+    height: 98vh;
+    background-size: cover;
+    background-position: center;
+    color: #323535;
+    padding-top: 120px;
+}
+
+.our-goal .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.txt-our-goal h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 300;
+    color: #999b9b;
+    padding: 40px;
+    margin-top: 80px 0;
+}
+
+.txt-our-goal h1 span {
+    color: #413f3f;
+    font-weight: 700;
+}
+
+.our-goal .txt-our-goal p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.our-goal button {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    align-items: center;
+}
+
+/* formulário */
+form .interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 700px;
+}
+
+.form-box h2 {
+    padding: 24px 32px;
+    font-size: 24px;
+    color: #323535;
+    border-bottom: thin solid #ccc;
+}
+
+.form-box form {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 32px;
+}
+
+.form-box input,
+.form-box textarea {
+    width: calc(50% - 8px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.form-box input:first-child {
+    margin-right: 16px;
+}
+
+.form-box input[name=subject] {
+    width: 100%;
+}
+
+.form-box textarea {
+    width: 100%;
+    height: 180px;
+    padding: 16px;
+}
+
+.form-box button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 48px;
+    background-color: cadetblue;
+    color: #323535;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #B0B0B0;
+}
+
+/* estilo rodapé */
+footer {
+    background-color: #B0B0B0;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .top-footer button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+footer .top-footer button:hover {
+    background-color: black;
+    color: #fff;
+}
+
+footer .top-footer button img {
+    max-width: 40px;
+    padding: 10px 0;
+}
+
+footer .middle-footer {
+    margin: 20px 0;
+}
+
+footer .middle-footer a {
+    color: #fff;
+    margin: 0 10px;
+}
