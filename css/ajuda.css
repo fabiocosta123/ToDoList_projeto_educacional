@@ -3,7 +3,11 @@
   flex-wrap: nowrap;
 }
 
-header{
+body {
+  background-image: linear-gradient(to bottom, #e7ebf2, #e5e7eb, #f9f2cc);
+}
+
+header {
   display: flex;
   margin: 0 auto;
   flex-direction: row;
@@ -13,7 +17,6 @@ header{
   padding: 0.3rem 1rem;
   height: 8vh;
   font-size: 1.5em;
-  background-color: #fff;
   border-bottom: #000000 1px solid;
 }
 
@@ -23,6 +26,12 @@ header{
 
 header > ul {
   display: none;
+}
+
+li > a {
+  text-decoration: none;
+  color: #4b525c;
+  padding: 0.5rem 1rem;
 }
 
 .titulo-principal {
@@ -44,6 +53,7 @@ header > ul {
   border-radius: 5%;
   padding: 2rem 1rem;
   margin: 2rem;
+  box-shadow: #4b525c 0px 0px 10px 0px;
 }
 
 .problematizacao > p {
@@ -68,6 +78,7 @@ header > ul {
   border-radius: 5%;
   padding: 2rem 1rem;
   margin: 2rem;
+  box-shadow: #4b525c 0px 0px 10px 0px;
 }
 
 .solucoes > h1 {
@@ -99,6 +110,7 @@ header > ul {
   padding: 2rem 1rem;
   margin: 2rem;
   text-align: center;
+  box-shadow: #4b525c 0px 0px 10px 0px;
 }
 
 .to-do > h2 {
@@ -138,12 +150,10 @@ header > ul {
   border: 1px solid #000000;
   padding: 0.5rem;
   text-align: center;
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
 
 @media (min-width: 768px) {
   .container {
@@ -167,19 +177,18 @@ header > ul {
     margin: 1rem 15% 1rem auto;
   }
 
-    .to-do {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .to-do > h2{
-      text-align: center;
-      justify-content: center;
-    }
+  .to-do {
+    width: 90%;
+    margin: 0 auto;
   }
 
+  .to-do > h2 {
+    text-align: center;
+    justify-content: center;
+  }
+}
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .problematizacao {
     width: 80%;
     margin: 1rem auto;
@@ -199,18 +208,19 @@ header > ul {
   }
 
   .to-do {
-    width: 80%;
+    width: 75vh;
     margin: 1rem auto;
-    height: 65vh;
+    height: auto;
   }
 
   .to-do > h2 {
     width: 100%;
     text-align: center;
     justify-content: center;
+    margin: 0;
   }
 
-  .to-do__title{
+  .to-do__title {
     margin-top: 6rem;
   }
 
@@ -227,4 +237,3 @@ header > ul {
     list-style: none;
   }
 }
-
