@@ -1,0 +1,89 @@
+/* Fonte base e reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #AAB9CF; /* azul desfocado */
+  color: #333;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #4A4A4A; /* cinza escuro */
+  font-size: 2rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Formulário */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #4A4A4A;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #B0B0B0; /* cinza nebuloso */
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #E57373; /* vermelho suave */
+}
+
+/* Botão */
+button {
+  background-color: #F2E394; /* amarelo apagado */
+  color: #4A4A4A;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #dccb6e;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #4A4A4A;
+  font-size: 0.9rem;
+}
